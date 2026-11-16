@@ -15,12 +15,45 @@
   <link rel="stylesheet" href="./css/base-uemg.css" />
   <!-- 2. Estilos Livres do seu Setor (Desenvolva aqui seu CSS) -->
   <link rel="stylesheet" href="./css/setor.css" />
+  <style>
+    /* Estilo adicional para a seção do autor inspirada no InfoHub */
+    .author-section {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border-left: 5px solid #004a8d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .author-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #004a8d;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .author-info h3 {
+      color: #004a8d;
+      margin: 0 0 0.3rem 0;
+      font-size: 1.3rem;
+    }
+    .author-info p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 
 <body>
   <!-- =======================================================================
         ÁREA RESTRITA 1: CABEÇALHO INSTITUCIONAL OFICIAL UEMG (NÃO ALTERAR)
-        Mantém a credibilidade, identidade e navegação de retorno ao Hub.
         ======================================================================= -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -94,12 +127,11 @@
   </section>
 
   <!-- =======================================================================
-        ÁREA LIVRE: CONTEÚDO PRINCIPAL DO SETOR (FORMATURA & COLAÇÃO DE GRAU)
+        ÁREA LIVRE: CONTEÚDO PRINCIPAL DO SETOR
         ======================================================================= -->
   <main id="main-content" role="main" class="setor-main-section">
     <div class="container">
 
-      <!-- Cabeçalho de Introdução do Setor -->
       <header class="setor-section-header">
         <p class="setor-section-subtitle">Diretrizes & Orientações</p>
         <h2 class="setor-section-title">Etapas Finais e Outorga de Título</h2>
@@ -108,10 +140,7 @@
         </p>
       </header>
 
-      <!-- Grid de Conteúdo Principal -->
       <div class="setor-cards-grid">
-
-        <!-- Seção 1: Pré-Requisitos para a Formatura -->
         <article class="setor-card" style="grid-column: 1 / -1;">
           <h3>📋 1. Pré-Requisitos para a Formatura</h3>
           <p>Para estar apto a participar da solenidade de formatura e solicitar a outorga oficial de grau, o estudante concluinte da UEMG Unidade Carangola deve cumprir integralmente as exigências acadêmicas:</p>
@@ -121,7 +150,6 @@
           </ul>
         </article>
 
-        <!-- Seção 2: Modalidades de Colação de Grau -->
         <article class="setor-card" style="grid-column: 1 / -1;">
           <h3>🎓 2. Modalidades de Colação de Grau</h3>
           <p>A outorga do título profissional na universidade é oficializada através de três formatos regulamentados:</p>
@@ -132,7 +160,6 @@
           </ul>
         </article>
 
-        <!-- Seção 3: Perguntas Frequentes (FAQ) -->
         <article class="setor-card" style="grid-column: 1 / -1;">
           <h3>❓ 3. Perguntas Frequentes (FAQ)</h3>
           <ul style="margin-top: 1rem; padding-left: 20px;">
@@ -141,18 +168,155 @@
           </ul>
         </article>
 
-        <!-- Seção 4: Canais de Atendimento -->
         <article class="setor-card" style="grid-column: 1 / -1;">
           <h3>⏰ 4. Canais de Atendimento</h3>
           <p><strong>Setor Responsável:</strong> Secretaria Acadêmica / Registro Acadêmico – UEMG Unidade Carangola</p>
           <p><strong>E-mail:</strong> secretaria.carangola@uemg.br</p>
           <p><strong>Atendimento Presencial:</strong> Segunda a sexta-feira, em horário comercial.</p>
         </article>
-
       </div>
 
-      <!-- Box de Destaque / Importante -->
       <div class="setor-callout" role="note" style="margin-top: 2rem;">
         <h4>💡 Atenção aos Prazos do Calendário Acadêmico</h4>
         <p>
-          Lembre-se de conferir as datas-limite no calendário oficial da U
+          Lembre-se de conferir as datas-limite no calendário oficial da UEMG antes de submeter sua documentação de conclusão e acompanhar os avisos institucionais.
+        </p>
+      </div>
+
+      <!-- Seção do Autor do Site com a Foto Integrada -->
+      <section class="author-section">
+        <img src="./images/foto-desenvolvedor.jpeg" alt="Foto do Desenvolvedor Antônio Theodoro Da Cunha Netto" class="author-photo" />
+        <div class="author-info">
+          <h3>Desenvolvido por Antônio Theodoro Da Cunha Netto</h3>
+          <p>Estudante de Sistemas de Informação — UEMG Unidade Carangola</p>
+          <p>Matrícula: 2511200696</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =======================================================================
+        ÁREA RESTRITA 2: RODAPÉ INSTITUCIONAL E MODAIS (NÃO ALTERAR)
+        ======================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <h4>InfoHub UEMG Carangola</h4>
+        <p>
+          Atividade de Extensão Curricularizada — Disciplina de Programação 2<br />
+          Curso de Bacharelado em Sistemas de Informação<br />
+          Universidade do Estado de Minas Gerais — Unidade Acadêmica de Carangola
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Institucional & Governança</h4>
+        <ul class="footer-links">
+          <li>
+            <button type="button" class="footer-modal-trigger" data-modal-target="modal-sobre">
+              Sobre o Projeto de Extensão
+            </button>
+          </li>
+          <li>
+            <button type="button" class="footer-modal-trigger" data-modal-target="modal-termos">
+              Termos de Uso
+            </button>
+          </li>
+          <li>
+            <button type="button" class="footer-modal-trigger" data-modal-target="modal-privacidade">
+              Política de Privacidade & LGPD
+            </button>
+          </li>
+          <li>
+            <a href="https://www.uemg.br/" target="_blank" rel="noopener noreferrer">
+              Portal Oficial UEMG ↗
+            </a>
+          </li>
+          <li>
+            <a href="https://www.uemg.br/carangola" target="_blank" rel="noopener noreferrer">
+              Unidade Carangola ↗
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 UEMG Unidade Carangola — Sistemas de Informação. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAIS NATIVOS (<dialog>) -->
+  <dialog id="modal-sobre" class="app-dialog" aria-labelledby="modal-sobre-title">
+    <div class="dialog-content">
+      <header class="dialog-header">
+        <div class="dialog-header-title-box">
+          <span class="dialog-badge">Extensão Curricularizada</span>
+          <h3 id="modal-sobre-title" class="dialog-title">Sobre o Projeto InfoHub UEMG Carangola</h3>
+        </div>
+        <button type="button" class="dialog-close-btn" data-close-modal aria-label="Fechar modal Sobre o Projeto">
+          &times;
+        </button>
+      </header>
+      <div class="dialog-body">
+        <p>
+          O <strong>InfoHub UEMG Carangola</strong> é uma atividade de extensão universitária curricularizada realizada
+          no âmbito da disciplina de <strong>Programação 2</strong> do curso de <strong>Bacharelado em Sistemas de
+            Informação</strong> da Universidade do Estado de Minas Gerais (UEMG), Unidade Acadêmica de Carangola.
+        </p>
+      </div>
+      <footer class="dialog-footer">
+        <button type="button" class="dialog-action-btn" data-close-modal>Compreendi</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog id="modal-termos" class="app-dialog" aria-labelledby="modal-termos-title">
+    <div class="dialog-content">
+      <header class="dialog-header">
+        <div class="dialog-header-title-box">
+          <span class="dialog-badge">Normativa & Uso</span>
+          <h3 id="modal-termos-title" class="dialog-title">Termos de Uso do InfoHub</h3>
+        </div>
+        <button type="button" class="dialog-close-btn" data-close-modal aria-label="Fechar modal Termos de Uso">
+          &times;
+        </button>
+      </header>
+      <div class="dialog-body">
+        <p>O InfoHub opera exclusivamente como um centro agregador, informativo e facilitador de acesso aos serviços institucionais da Unidade Acadêmica de Carangola.</p>
+      </div>
+      <footer class="dialog-footer">
+        <button type="button" class="dialog-action-btn" data-close-modal>Entendido</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <dialog id="modal-privacidade" class="app-dialog" aria-labelledby="modal-privacidade-title">
+    <div class="dialog-content">
+      <header class="dialog-header">
+        <div class="dialog-header-title-box">
+          <span class="dialog-badge">Proteção de Dados & LGPD</span>
+          <h3 id="modal-privacidade-title" class="dialog-title">Política de Privacidade & LGPD</h3>
+        </div>
+        <button type="button" class="dialog-close-btn" data-close-modal aria-label="Fechar modal Política de Privacidade">
+          &times;
+        </button>
+      </header>
+      <div class="dialog-body">
+        <p>Não coletamos, não solicitamos e não armazenamos nenhum dado pessoal identificável dos visitantes.</p>
+      </div>
+      <footer class="dialog-footer">
+        <button type="button" class="dialog-action-btn" data-close-modal>Concordo</button>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- SCRIPTS -->
+  <script src="./js/base-uemg.js"></script>
+  <script src="./js/setor.js"></script>
+</body>
+
+</html>
